@@ -4,7 +4,7 @@
 <title>Page Title</title>
 </head>
 <body>
- <button onclick="start()" id = "start">Click</button> 
+ <button onclick="start()" id="bstart">Click</button> 
  
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
@@ -14,6 +14,7 @@
 <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
 <script>
   function start (){
+   document.getElementById("bstart").style.display = "none";
     var api = prompt("API", "1");
     var auth = prompt("AUTH", "2");
     var db = prompt("DB", "3");
@@ -26,7 +27,7 @@
       storageBucket: strg,
     };
     firebase.initializeApp(config);
-    document.getElementById("start").style.display="none";
+    
   }
   
 </script>
