@@ -6,7 +6,6 @@
 <body>
  <button onclick="start()" id="bstart">Click</button> 
  <input style="display:none" type="text" id="user"> 
- <br>
  <input style="display:none" type="text" id="password">
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
@@ -31,7 +30,7 @@
     firebase.initializeApp(config);
     
     document.getElementById("user").style.display = "block";
-    document.getElementById("user").style.display = "block";
+    document.getElementById("password").style.display = "block";
     
   }
   function login (){
