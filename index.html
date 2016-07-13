@@ -4,7 +4,8 @@
 <title>Page Title</title>
 </head>
 <body>
- <button onclick="start()">Click</button> 
+ <button onclick="start()" id = "start">Click</button> 
+ 
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
 
@@ -25,8 +26,8 @@
       storageBucket: strg,
     };
     firebase.initializeApp(config);
+    
   }
-  
+  document.getElementById("start").display=none;
 </script>
-
 </html> 
