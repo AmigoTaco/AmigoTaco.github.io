@@ -43,7 +43,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("user").style.display = "block";
     document.getElementById("password").style.display = "block";
     document.getElementById("blogin").style.display = "block";
-    
+    return;
   }
    function login (){
    var email = document.getElementById('user').value;
@@ -69,6 +69,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 		console.log(error);
 		
 	});
+	return;
   }
   
 </script>
