@@ -4,7 +4,7 @@
 <title>Page Title</title>
 </head>
 <body>
- <button onclick="start()" id="bstart">Click</button> 
+ <button onClick="start ()" id="bstart">Click</button> 
  <input style="display:none" type="text" id="user"> 
  <input style="display:none" type="text" id="password">
 <h1>This is a Heading</h1>
@@ -14,7 +14,7 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
 <script>
-  function start(){
+  function start (){
    document.getElementById("bstart").style.display = "none";
     var api = prompt("API", "1");
     var auth = prompt("AUTH", "2");
